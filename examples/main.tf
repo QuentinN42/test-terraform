@@ -4,11 +4,20 @@
 terraform {
   required_providers {
     provider = {
-      version = "0.3.1"
+      version = "0.1"
       source = "hashicorp.com/QuentinN42/provider"
     }
   }
 }
 
-provider "provider" {
+provider "provider" { }
+
+
+data provider_add calc {
+  a = 1
+  b = 2
+}
+
+output "add" {
+  value = data.provider_add.calc.result
 }
