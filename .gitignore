@@ -2,6 +2,7 @@
 terraform-provider-hashicups
 bin
 vendor
+.terraform.lock.hcl
 
 # Local .terraform directories
 **/.terraform/*
