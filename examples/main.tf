@@ -12,12 +12,9 @@ terraform {
 
 provider "provider" { }
 
-
-data provider_add calc {
-  a = 1
-  b = 2
-}
-
-output "add" {
-  value = data.provider_add.calc.result
+resource "provider_adh" "john" {
+  name = "john"
+  naissance = "15 juin 2001"
+  email = "john@rezel.net"
+  adresse = "1 rue de la paix"
 }

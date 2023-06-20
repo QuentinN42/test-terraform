@@ -13,9 +13,11 @@ func Provider() *schema.Provider {
 		Schema: map[string]*schema.Schema{
 		},
 		ResourcesMap: map[string]*schema.Resource{
+			"provider_adh": resourceAdh(),
 		},
 		DataSourcesMap: map[string]*schema.Resource{
-			"provider_add":          dataSourceAdd(),
+			"provider_add": dataSourceAdd(),
 		},
+		ConfigureContextFunc: providerConfigure,
 	}
 }

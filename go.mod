@@ -5,6 +5,12 @@ go 1.18
 require github.com/hashicorp/terraform-plugin-sdk/v2 v2.26.1
 
 require (
+	github.com/andybalholm/brotli v1.0.5 // indirect
+	github.com/klauspost/compress v1.16.3 // indirect
+	github.com/valyala/bytebufferpool v1.0.0 // indirect
+)
+
+require (
 	github.com/agext/levenshtein v1.2.2 // indirect
 	github.com/apparentlymart/go-textseg/v13 v13.0.0 // indirect
 	github.com/fatih/color v1.13.0 // indirect
@@ -32,6 +38,7 @@ require (
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
 	github.com/oklog/run v1.0.0 // indirect
+	github.com/valyala/fasthttp v1.48.0
 	github.com/vmihailenco/msgpack v4.0.4+incompatible // indirect
 	github.com/vmihailenco/msgpack/v4 v4.3.12 // indirect
 	github.com/vmihailenco/tagparser v0.1.1 // indirect
