@@ -44,14 +44,6 @@ func get(url string) (map[string]string, error) {
 	return resData, err
 }
 
-func Post(url string, data map[string]string) (map[string]string, error) {
-	var x = schema.ResourceData{}
-	var c = context.TODO()
-
-	providerConfigure(c, &x)
-	return post(url, data)
-}
-
 
 func post(url string, data map[string]string) (map[string]string, error) {
 	var dataBytes, _ = json.Marshal(data)
