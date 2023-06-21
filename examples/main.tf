@@ -1,17 +1,19 @@
 terraform {
   required_providers {
-    provider = {
+    file = {
       version = "0.1"
-      source = "hashicorp.com/QuentinN42/provider"
+      source  = "hashicorp.com/QuentinN42/file"
     }
   }
 }
 
-provider "provider" { }
+provider "file" {
+  base_path = "./tmp"
+}
 
-resource "provider_adh" "john" {
-  name = "john"
-  naissance = "15 juin 2001"
-  email = "john@rezel.net"
-  adresse = "1 rue de la paix"
+resource "file_file" "test" {
+  filename = "test.txt"
+  content  = <<EOF
+Hello, World!
+EOF
 }
